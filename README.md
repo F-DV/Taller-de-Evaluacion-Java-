@@ -1,23 +1,23 @@
 # Taller-de-Evaluacion-Java-
 Realizo un taller de 18 preguntas para validar mis conocimientos en java
 
-Ejercicios Propuestos
+1. Declara 2 variables numéricas (con el valor que desees), he indica cual es mayor de los dos. Si son iguales indicarlo también. Ve cambiando los valores para comprobar que funciona.
+2. Al ejercicio anterior agregar entrada por consola de dos valores e indicar si son mayores, menores o iguales.
+3. Haz una aplicación que calcule el área de un círculo(pi*R2). El radio se pedirá por teclado (recuerda pasar de String a double con Double.parseDouble). Usa la constante PI y el método pow de Math.
+4. Lee un número por teclado que pida el precio de un producto (puede tener decimales) y calcule el precio final con IVA. El IVA sera una constante que sera del 21%.
+5. Muestra los números impares y pares del 1 al 100 (ambos incluidos). Usa un bucle while.
+6. Realiza el ejercicio anterior usando un ciclo for.
+7. Lee un número por teclado y comprueba que este numero es mayor o igual que cero, si no lo es lo volverá a pedir (do while), después muestra ese número por consola.
+8. Crea una aplicación por consola que nos pida un día de la semana y que nos diga si es un día laboral o no. Usa un switch para ello.
+9. Del texto, “La sonrisa sera la mejor arma contra la tristeza” Reemplaza todas las a del String anterior por una e, adicionalmente concatenar a esta frase una adicional que ustedes quieran incluir por consola y las muestre luego unidas.
+10. Realizar una aplicación de consola, que al ingresar una frase por teclado elimine los espacios que esta contenga.
+11. Realizar la construcción de un algoritmo que permita de acuerdo a una frase pasada por consola, indicar cual es la longitud de esta frase, adicionalmente cuantas vocales tiene de “a,e,i,o,u”.
+12. Pedir dos palabras por teclado, indicar si son iguales, sino son iguales mostrar sus diferencias.
+13. Realizar un algoritmo que permita consulta la fecha y hora actual en el formato (AAAA/MM/DD) (HH:MM:SS)
+14. Crear un programa que pida un numero por teclado y que imprima por pantalla los números desde el numero introducido hasta 1000 con saldos de 2 en 2.
+15. Hacer un programa que muestre el siguiente menú de opciones
 
-Declara 2 variables numéricas (con el valor que desees), he indica cual es mayor de los dos. Si son iguales indicarlo también. Ve cambiando los valores para comprobar que funciona.
-Al ejercicio anterior agregar entrada por consola de dos valores e indicar si son mayores, menores o iguales.
-Haz una aplicación que calcule el área de un círculo(pi*R2). El radio se pedirá por teclado (recuerda pasar de String a double con Double.parseDouble). Usa la constante PI y el método pow de Math.
-Lee un número por teclado que pida el precio de un producto (puede tener decimales) y calcule el precio final con IVA. El IVA sera una constante que sera del 21%.
-Muestra los números impares y pares del 1 al 100 (ambos incluidos). Usa un bucle while.
-Realiza el ejercicio anterior usando un ciclo for.
-Lee un número por teclado y comprueba que este numero es mayor o igual que cero, si no lo es lo volverá a pedir (do while), después muestra ese número por consola.
-Crea una aplicación por consola que nos pida un día de la semana y que nos diga si es un día laboral o no. Usa un switch para ello.
-Del texto, “La sonrisa sera la mejor arma contra la tristeza” Reemplaza todas las a del String anterior por una e, adicionalmente concatenar a esta frase una adicional que ustedes quieran incluir por consola y las muestre luego unidas.
-Realizar una aplicación de consola, que al ingresar una frase por teclado elimine los espacios que esta contenga.
-Realizar la construcción de un algoritmo que permita de acuerdo a una frase pasada por consola, indicar cual es la longitud de esta frase, adicionalmente cuantas vocales tiene de “a,e,i,o,u”.
-Pedir dos palabras por teclado, indicar si son iguales, sino son iguales mostrar sus diferencias.
-Realizar un algoritmo que permita consulta la fecha y hora actual en el formato (AAAA/MM/DD) (HH:MM:SS)
-Crear un programa que pida un numero por teclado y que imprima por pantalla los números desde el numero introducido hasta 1000 con saldos de 2 en 2.
-Hacer un programa que muestre el siguiente menú de opciones
+
 ****** GESTION CINEMATOGRÁFICA ********
 1-NUEVO ACTOR
 2-BUSCAR ACTOR
@@ -28,13 +28,11 @@ Hacer un programa que muestre el siguiente menú de opciones
 
 7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES
 8-SALIR
-
-
 EL SISTEMA SOLO VA A SALIR CUANDO SE DIGITE EL NUMERO 8, MIENTRAS SE DIGITE UNA DE LAS CINCO OPCIONES DEBE SEGUIR MOSTRADO EL MENU Y SI EL USUARIO DIGITA UN NUMERO QUE NO ESTA EN EL MENU SE DEBE ARROJAR UN MENSAJE " OPCION INCORRECTO". Y MOSTRAR EL MENU NUEVAMENTE.
 PISTA: CONVINAR SWICHT Y ALGUNO DE LOS BUCLES.
 
 
-Haz una clase llamada Persona que siga las siguientes condiciones:
+16. Haz una clase llamada Persona que siga las siguientes condiciones:
 
 Sus atributos son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura. No queremos que se accedan directamente a ellos. Piensa que modificador de acceso es el más adecuado, también su tipo. Si quieres añadir algún atributo puedes hacerlo.
 
@@ -68,7 +66,7 @@ Para cada objeto, deberá comprobar si está en su peso ideal, tiene sobrepeso o
 Indicar para cada objeto si es mayor de edad.
 Por último, mostrar la información de cada objeto.
 
-Crearemos una superclase llamada Electrodoméstico con las siguientes características:
+17. Crearemos una superclase llamada Electrodoméstico con las siguientes características:
 Sus atributos son precio base, color, consumo energético (letras entre A y F) y peso. Indican que se podrán heredar.
 Por defecto, el color será blanco, el consumo energético será F, el precioBase es de 100 € y el peso de 5 kg. Usa constantes para ello.
 Los colores disponibles son blancos, negro, rojo, azul y gris. No importa si el nombre está en mayúsculas o en minúsculas.
@@ -83,12 +81,7 @@ Los métodos que implementara serán:
 Métodos get de todos los atributos.
 comprobarConsumoEnergetico(char letra): comprueba que la letra es correcta, sino es correcta usara la letra por defecto. Se invocará al crear el objeto y no será visible.
 comprobarColor(String color): comprueba que el color es correcto, sino lo es usa el color por defecto. Se invocará al crear el objeto y no será visible.
-precioFinal(): según el consumo energético, aumentara su precio, y según su tamaño, también. Esta es la lista de precios:
-
-
-
-
-
+precioFinal(): según el consumo energético, aumentara su precio, y según su tamaño, también. Esta es la lista de precios.
 
 Crearemos una subclase llamada Lavadora con las siguientes características:
 
@@ -126,8 +119,7 @@ Deberás mostrar el precio de cada clase, es decir, el precio de todas las telev
 
 Por ejemplo, si tenemos un Electrodomestico con un precio final de 300, una lavadora de 200 y una televisión de 500, el resultado final sera de 1000 (300+200+500) para electrodomésticos, 200 para lavadora y 500 para televisión.
 
-
-Crear una clase llamada Serie con las siguientes características:
+18. Crear una clase llamada Serie con las siguientes características:
 Sus atributos son título, numero de temporadas, entregado, género y creador.
 Por defecto, el número de temporadas es de 3 temporadas y entregado false. El resto de atributos serán valores por defecto según el tipo del atributo.
 Los constructores que se implementarán serán:
@@ -167,5 +159,4 @@ Crea un objeto en cada posición del array, con los valores que desees, puedes u
 Entrega algunos Videojuegos y Series con el método entregar().
 Cuenta cuantos Series y Videojuegos hay entregados. Al contarlos, devuélvelos.
 Por último, indica el Videojuego tiene más horas estimadas y la serie con mas temporadas. Muéstralos en pantalla con toda su información (usa el método toString()).
-
 
