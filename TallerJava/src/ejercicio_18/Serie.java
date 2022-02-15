@@ -2,11 +2,11 @@ package ejercicio_18;
 
 public class Serie {
 
-    String titulo = "";
-    int nTemporadas = 3;
-    boolean entregado = false;
-    String genero = "";
-    String creador = "";
+    private String titulo = "";
+    private int nTemporadas = 3;
+    private boolean entregado = false;
+    private String genero = "";
+    private String creador = "";
 
     public Serie(){}                                                                   //Constructor por defecto
 
