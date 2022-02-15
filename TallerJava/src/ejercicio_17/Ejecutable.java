@@ -22,7 +22,7 @@ public class Ejecutable {
         electro[5] = new Television();
         electro[6] = new Television(50,true);
         electro[7] = new Television(180,50);
-        electro[8] = new Electrodomestico(70,"NEGRO",'B',70);
+        electro[8] = new Electrodomestico(70,"ROJO",'E',70);
         electro[9] = new Electrodomestico(500,10);
 
         //Creamos un forEach para recorrer los objetos
