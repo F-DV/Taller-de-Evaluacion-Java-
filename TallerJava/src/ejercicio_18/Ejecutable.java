@@ -4,10 +4,11 @@ public class Ejecutable {
     public static void main(String[] args) {
 
         Serie series[] = new Serie[5];                                                                          //Array de series
+        Videojuego juego[] = new Videojuego[5];
 
-        int seriesEntragadas = 0;
-        int serieMasTemporadas = 0;
-        int auxiliarComparacion = 0;
+        int seriesEntragadas = 0;                                                                               //variable para guardar cuantas series tenemos entregadas
+        int serieMasTemporadas = 0;                                                                             //Guardamos el indez de la serie con mas temporadas
+        int auxiliarComparacion = 0;                                                                            //Auxilia para guardar el primero indez de las series y permitirnos comparar
 
         series[0] = new Serie("La casa de papel",5,"Suspenso","netflix");
         series[1] = new Serie("Good Doctor",6,"Drama","AmazonPrime");

@@ -1,10 +1,10 @@
 package ejercicio_18;
 
-public class Videojuego {
+public class Videojuego implements Entregable{
 
     private String titulo = "";
     private int horasEstimadas = 0;
-    private boolean entragado = false;
+    private boolean entregado = false;
     private String genero = "";
     private String compañia = "";
 
@@ -28,7 +28,7 @@ public class Videojuego {
         return "Videojuego{" +
                 "titulo='" + titulo + '\'' +
                 ", horasEstimadas=" + horasEstimadas +
-                ", entragado=" + entragado +
+                ", entragado=" + entregado +
                 ", genero='" + genero + '\'' +
                 ", compañia='" + compañia + '\'' +
                 '}';
@@ -64,5 +64,37 @@ public class Videojuego {
 
     public void setCompañia(String compañia) {
         this.compañia = compañia;
+    }
+
+    @Override
+    public void entregar() {
+        this.entregado = true;
+    }
+
+    @Override
+    public void devolver() {
+        this.entregado = false;
+    }
+
+    @Override
+    public boolean isEntregable() {
+        if(this.entregado == true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        int numero = this.horasEstimadas;
+        if(this.horasEstimadas == (int)o ){
+            numero = 0;
+        }else if(this.horasEstimadas < (int)o){
+            numero = -1;
+        }else if(this.horasEstimadas > (int)0){
+            numero = 1;
+        }
+        return numero;
     }
 }
