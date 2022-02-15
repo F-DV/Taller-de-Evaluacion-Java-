@@ -8,14 +8,29 @@ public class Videojuego implements Entregable{
     private String genero = "";
     private String compañia = "";
 
+    /**
+     * Constructor por defecto
+     */
     public Videojuego() {
     }
 
+    /**
+     * Constructor con parametros de entrada
+     * @param titulo : titulo en String del video juego
+     * @param horasEstimadas : Int horas estimadas del video juego
+     */
     public Videojuego(String titulo, int horasEstimadas) {
         this.titulo = titulo;
         this.horasEstimadas = horasEstimadas;
     }
 
+    /**
+     *
+     * @param titulo : String
+     * @param horasEstimadas : Int
+     * @param genero : String
+     * @param compañia : String
+     */
     public Videojuego(String titulo, int horasEstimadas, String genero, String compañia) {
         this.titulo = titulo;
         this.horasEstimadas = horasEstimadas;
@@ -85,6 +100,11 @@ public class Videojuego implements Entregable{
         }
     }
 
+    /**
+     *
+     * @param o : Objeto a comparar
+     * @return :  int, 0 para iguales, -1 para menor a de esta clase, 1 para mayor al de esta clase
+     */
     @Override
     public int compareTo(Object o) {
         int numero = this.horasEstimadas;
