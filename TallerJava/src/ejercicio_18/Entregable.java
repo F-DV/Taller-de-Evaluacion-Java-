@@ -2,15 +2,11 @@ package ejercicio_18;
 
 public interface Entregable {
 
-    public static void entregar(){
-    }
-    public static void devolver(){
+    public void entregar();
 
-    }
-    public static boolean isEntregado(){
+    public void devolver();
 
-        return true;
-    }
-    public static void compareTo(Object o){
-    }
+    public boolean isEntregable();
+
+    public int compareTo(Object o);
 }

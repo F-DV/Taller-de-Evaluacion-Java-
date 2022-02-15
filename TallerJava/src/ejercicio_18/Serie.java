@@ -1,6 +1,6 @@
 package ejercicio_18;
 
-public class Serie {
+public class Serie implements Entregable{
 
     private String titulo = "";
     private int nTemporadas = 3;
@@ -33,6 +33,7 @@ public class Serie {
                 '}';
     }
 
+
     public String getTitulo() {
         return titulo;
     }
@@ -63,5 +64,37 @@ public class Serie {
 
     public void setCreador(String creador) {
         this.creador = creador;
+    }
+
+    @Override
+    public void entregar() {
+        this.entregado = true;
+    }
+
+    @Override
+    public void devolver() {
+        this.entregado = false;
+    }
+
+    @Override
+    public boolean isEntregable() {
+        if(this.entregado == true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        int numero = this.nTemporadas;
+        if(this.nTemporadas == (int)o ){
+            numero = 0;
+        }else if(this.nTemporadas < (int)o){
+            numero = -1;
+        }else if(this.nTemporadas > (int)0){
+            numero = 1;
+        }
+        return numero;
     }
 }
