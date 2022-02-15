@@ -8,13 +8,28 @@ public class Serie implements Entregable{
     private String genero = "";
     private String creador = "";
 
-    public Serie(){}                                                                   //Constructor por defecto
+    /**
+     * Constructor por defecto
+     */
+    public Serie(){}
 
+    /**
+     *
+     * @param titulo : String con titulo de la serie
+     * @param creador : String con nombre del creador
+     */
     public Serie(String titulo, String creador) {                                       //Constructor 2
         this.titulo = titulo;
         this.creador = creador;
     }
 
+    /**
+     *
+     * @param titulo : String
+     * @param nTemporadas : Int
+     * @param genero : String
+     * @param creador : String
+     */
     public Serie(String titulo, int nTemporadas, String genero, String creador) {       //constructor 3
         this.titulo = titulo;
         this.nTemporadas = nTemporadas;
@@ -33,6 +48,7 @@ public class Serie implements Entregable{
                 '}';
     }
 
+    //Metodos Getters and Setters
 
     public String getTitulo() {
         return titulo;
@@ -66,16 +82,26 @@ public class Serie implements Entregable{
         this.creador = creador;
     }
 
+    /**
+     * Define como verdadero al objeto que la llama la variable entregado
+     */
     @Override
     public void entregar() {
         this.entregado = true;
     }
 
+    /**
+     * Define como falso al objeto que la llama la variable entregado
+     */
     @Override
     public void devolver() {
         this.entregado = false;
     }
 
+    /**
+     * Validamos si el objeto esta entregado
+     * @return boolean
+     */
     @Override
     public boolean isEntregable() {
         if(this.entregado == true){
@@ -85,6 +111,11 @@ public class Serie implements Entregable{
         }
     }
 
+    /**
+     * validamos la serie con mayor numero de temporadas
+     * @param o : objeto a comprar
+     * @return int
+     */
     @Override
     public int compareTo(Object o) {
         int numero = this.nTemporadas;

@@ -81,16 +81,26 @@ public class Videojuego implements Entregable{
         this.compañia = compañia;
     }
 
+    /**
+     * Define la variable entregado como verdadero si es llamado por el objeto
+     */
     @Override
     public void entregar() {
         this.entregado = true;
     }
 
+    /**
+     * Define como falso la variable entregado si es llamado por el objeto
+     */
     @Override
     public void devolver() {
         this.entregado = false;
     }
 
+    /**
+     * Valida si el objeto en cuestion esta entrado o no
+     * @return boolean
+     */
     @Override
     public boolean isEntregable() {
         if(this.entregado == true){
